@@ -583,7 +583,7 @@ object {
 
 .l-footer__snsLink {
   width: 100px;
-  margin-left: 70px;
+  margin-left: 20px;
   padding-bottom: 18px;
 }
 
@@ -609,6 +609,11 @@ object {
   text-align: center;
 }
 
+@media (min-width: 600px) {
+  .l-footer__snsLink {
+    margin-left: 70px;
+  }
+}
 .c-button {
   display: inline-block;
   text-align: center;
@@ -1019,10 +1024,16 @@ object {
 }
 
 .p-product-content__card {
+  width: 90%;
   margin: 0 auto;
   margin-bottom: 40px;
 }
 
+@media (min-width: 600px) {
+  .p-product-content__card {
+    width: 100%;
+  }
+}
 @media (min-width: 900px) {
   .p-products-content {
     display: grid;
@@ -1034,6 +1045,7 @@ object {
   }
 }
 .p-skills-content__card {
+  width: 90%;
   margin: 0 auto;
 }
 
@@ -1041,6 +1053,11 @@ object {
   margin-bottom: 30px;
 }
 
+@media (min-width: 600px) {
+  .p-skills-content__card {
+    width: 100%;
+  }
+}
 @media (min-width: 900px) {
   .p-skills-content {
     display: flex;
