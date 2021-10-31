@@ -11,65 +11,136 @@
   <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@600&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+  <link rel="stylesheet" href="/style.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="main.js"></script>
+  <script src="./asset/js/main.js"></script>
 </head>
 <body>
-  <main>
+  <main id="home">
     <header class="l-header">
-      <div class="l-header__flex">
-        <a class="c-logo l-header-logo" href="#"><img class="c-logo__img" src="logo (3).png" alt="M.create-worksのロゴ"></a>
+      <div class="l-header__flex c-inner">
+        <a class="c-logo l-header-logo" href="#home"><img class="c-logo__img" src="./asset/img/logo (3).png" alt="M.create-worksのロゴ"></a>
         <div class="l-header-hamburger c-hamburger">
           <span class="c-hamburger__item1"></span>
           <span class="c-hamburger__item2"><span class="c-hamburger__item2-txt">menu</span> </span>
           <span class="c-hamburger__item3"></span>
         </div>
-      </div> <!-- /header-flex-->
-      <div class="l-header-open">
-        <ul class="l-header-open-menu">
-          <li class="l-header-open-menu__list"><a class="l-header-open-menu__link" href="#">ホーム</a></li>
-          <li class="l-header-open-menu__list"><a class="l-header-open-menu__link" href="">スキル</a></li>
-          <li class="l-header-open-menu__list"><a class="l-header-open-menu__link" href="">制作物</a></li>
-          <li class="l-header-open-menu__list"><a class="l-header-open-menu__link" href="">ブログ</a></li>
-          <li class="l-header-open-menu__list"><a class="l-header-open-menu__link" href="">お問い合わせ</a></li>
+      </div> <!-- /header-flex c-inner -->
+      <div class="l-header-spMenu">
+        <ul>
+          <li class="l-header-spMenu__list"><a class="l-header-spMenu__link l-header-spMenu__link1" href="#home">ホーム</a></li>
+          <li class="l-header-spMenu__list"><a class="l-header-spMenu__link l-header-spMenu__link2" href="">スキル</a></li>
+          <li class="l-header-spMenu__list"><a class="l-header-spMenu__link l-header-spMenu__link3" href="">制作物</a></li>
+          <li class="l-header-spMenu__list"><a class="l-header-spMenu__link l-header-spMenu__link4" href="">ブログ</a></li>
+          <li class="l-header-spMenu__list"><a class="l-header-spMenu__link l-header-spMenu__link5" href="">お問い合わせ</a></li>
         </ul>
-      </div>
+      </div> <!-- /l-header-spMenu -->
+      <div class="l-header-menu c-inner">
+        <ul class="l-header-menu__lists">
+          <li class="l-header-menu__list"><a class="l-header-menu__link" href="#">ホーム</a></li>
+          <li class="l-header-menu__list"><a class="l-header-menu__link" href="">スキル</a></li>
+          <li class="l-header-menu__list"><a class="l-header-menu__link" href="">制作物</a></li>
+          <li class="l-header-menu__list"><a class="l-header-menu__link" href="">ブログ</a></li>
+          <li class="l-header-menu__list"><a class="l-header-menu__link" href="">お問い合わせ</a></li>
+        </ul>
+      </div> <!-- /l-header-menu c-inner -->
     </header>
     <section class="p-fv">
-      <div class="p-fv__container wrapper">
+      <div class="p-fv__container">
+        <h1 class="p-fv__ttl">
+          <span class="p-fv-anime p-fv-anime__01">M</span>
+          <span class="p-fv-anime p-fv-anime__02">.</span>
+          <span class="p-fv-anime p-fv-anime__03">c</span>
+          <span class="p-fv-anime p-fv-anime__04">r</span> 
+          <span class="p-fv-anime p-fv-anime__05">e</span>
+          <span class="p-fv-anime p-fv-anime__06">a</span>
+          <span class="p-fv-anime p-fv-anime__07">t</span>
+          <span class="p-fv-anime p-fv-anime__08">e</span>
+          <span class="p-fv-anime p-fv-anime__09">-</span>
+          <span class="p-fv-anime p-fv-anime__10">w</span>
+          <span class="p-fv-anime p-fv-anime__11">o</span>
+          <span class="p-fv-anime p-fv-anime__12">r</span>
+          <span class="p-fv-anime p-fv-anime__13">k</span>
+          <span class="p-fv-anime p-fv-anime__14">s</span>
+        </h1>
         <div class="p-fv__underbar">
-          <h1 class="p-fv__ttl">
-            <span class="p-fv-anime p-fv-anime__01">M</span>
-            <span class="p-fv-anime p-fv-anime__02">.</span>
-            <span class="p-fv-anime p-fv-anime__03">c</span>
-            <span class="p-fv-anime p-fv-anime__04">r</span> 
-            <span class="p-fv-anime p-fv-anime__05">e</span>
-            <span class="p-fv-anime p-fv-anime__06">a</span>
-            <span class="p-fv-anime p-fv-anime__07">t</span>
-            <span class="p-fv-anime p-fv-anime__08">e</span>
-            <span class="p-fv-anime p-fv-anime__09">-</span>
-            <span class="p-fv-anime p-fv-anime__10">w</span>
-            <span class="p-fv-anime p-fv-anime__11">o</span>
-            <span class="p-fv-anime p-fv-anime__12">r</span>
-            <span class="p-fv-anime p-fv-anime__13">k</span>
-            <span class="p-fv-anime p-fv-anime__14">s</span>
-          </h1>
         </div> <!-- /p-fv__underbar -->
-        <p class="p-fv__txt">てきすとてきすと文章文章文章テキストテキストてきすとてきすと文章文章文章テキストテキストてきすとてきすと文章文章文章テキストテキストてきすとてきすと文章文章文章テキストテキストてきすとてきすと文章文章文章テキストテキスト</p>
-      </div> <!-- /p-fv__container wrapper -->
+      </div> <!-- /p-fv__container -->
+      <div class="p-fv-introduction c-inner">
+        <p class="p-fv-introduction__txt">閲覧ありがとうございます。<br>
+          てきすとテキスト文章てきすとテキスト文章てきすとテキスト文章てきすとテキスト文章てきすとテキスト文章てきすとテキスト文章てきすとテキスト文章てきすとテキスト文章てきすとテキスト文章てきすとテキスト文章
+          てきすとテキスト文章てきすとテキスト文章てきすとテキスト文章てきすとテキスト文章てきすとテキスト文章てきすとテキスト文章てきすとテキスト文章てきすとテキスト文章てきすとテキスト文章てきすとテキスト文章てきすとテキスト文章てきすとテキスト文章てきすとテキスト文章てきすとテキスト文章てきすとテキスト文章てきすとテキスト文章てきすとテキスト文章てきすとテキスト文章てきすとテキスト文章てきすとテキスト文章てきすとテキスト文章
+          てきすとテキスト文章</p>
+      </div> <!-- /p-fv-introduction wrapper -->
     </section> <!-- /p-fv -->
-    <section class="p-skills wrapper">
-      
+    <section class="p-skills c-section c-inner">
+      <h2 class="c-section__ttl c-section__ttl-skills">スキル</h2>
+      <div class="p-skills-content">
+        <div class="c-card p-skills-content__card">
+          <img class="c-card__img" src="/asset/img/undraw_static_website_0107.png" alt="HTML CSS のイメージイラスト">
+          <h3 class="c-card__ttl">コーディング</h3>
+          <p class="c-card__txt">てきすとテキスト文章てきすとテキスト文章てきすとテキスト文章てきすとテキスト文章てきすとテキスト文章てきすとテキスト</p>
+        </div> <!-- /p-skills-content__card p-skills-card -->
+        <div class="c-card p-skills-content__card">
+          <img class="c-card__img" src="/asset/img/undraw_wordpress_utxt.png" alt="WordPress のイメージイラスト">
+          <h3 class="c-card__ttl">CMS</h3>
+          <p class="c-card__txt">てきすとテキスト文章てきすとテキスト文章てきすとテキスト文章てきすとテキスト文章てきすとテキスト文章てきすとテキストてきすとテキスト文章てきすとテキスト文章てきすとテキスト文章てきすとテキスト文章てきすとテキスト文章てきすとテキスト</p>
+        </div> <!-- /c-card p-skills-content__card  -->
+      </div> <!-- /c-skills-content -->
     </section> <!-- /p-skills wrapper -->
-    <section class="p-products wrapper">
-      
-    </section> <!-- /p-product wrapper-->
-    <section class="p-contact wrapper">
-      
+    <section class="p-products c-section c-inner">
+      <h2 class="c-section__ttl c-section__ttl-products">制作物</h2>
+      <div class="p-products-content">
+        <div class="c-card p-product-content__card">
+          <img class="c-card__img" src="/asset/img/mainvisual.jpg" alt="">
+          <span class="c-card__Language">HTML/ CSS/ SCSS /html /css /scss /bem /WordPress</span>
+          <p class="c-card__txt">てきすとテキスト文章てきすとテキスト文章てきすとテキスト文章てきすとテキスト文章てきすとテキスト文章てきすとテキスト文章てきすとテキスト文章てきすとテキスト文章</p>
+        </div> <!-- /c-card p-product-content__card -->
+        <div class="c-card p-product-content__card">
+          <img class="c-card__img" src="/asset/img/mainvisual.jpg" alt="">
+          <span class="c-card__Language">HTML/ CSS/ SCSS /html /css /scss /bem /WordPress</span>
+          <p class="c-card__txt">てきすとテキスト文章てきすとテキスト文章てきすとテキスト文章てきすとテキスト文章てきすとテキスト文章てきすとテキスト文章てきすとテキスト文章てきすとテキスト文章てきすとテキスト文章てきすとテキスト文章</p>
+        </div> <!-- /c-card p-product-content__card -->
+        <div class="c-card p-product-content__card">
+          <img class="c-card__img" src="/asset/img/mainvisual.jpg" alt="">
+          <span class="c-card__Language">HTML/ CSS/ SCSS</span>
+          <p class="c-card__txt">てきすとテキスト文章てきすとテキスト文章てきすとテキスト文章てきすとテキスト文章てきすとテキスト文章てきすとテキスト文章てきすとテキスト文章てきすとテキスト文章</p>
+        </div> <!-- /c-card p-product-content__card -->
+        <div class="c-card p-product-content__card">
+          <img class="c-card__img" src="/asset/img/mainvisual.jpg" alt="">
+          <span class="c-card__Language">HTML/ CSS/ SCSS /html /css /scss /bem /WordPress</span>
+          <p class="c-card__txt">てきすとテキスト文章てきすとテキスト文章てきすとテキスト文章てきすとテキスト文章てきすとテキスト文章てきすとテキスト文章てきすとテキスト文章てきすとテキスト文章</p>
+        </div> <!-- /c-card p-product-content__card -->
+      </div> <!-- /p-product-content -->
+    </section> <!-- /p-products wrapper-->
+    <section class="p-contact c-section c-inner">
+      <h2 class="c-section__ttl c-section__ttl-contact">お問い合わせ</h2>
+      <p class="p-contact__text">　てきすとテキスト文章てきすとテキスト文章てきすとテキスト文章てきすとテキスト文章てきすとテキスト文章てきすとテキスト文章てきすとテキスト文章てきすとテキスト文章てきすとテキスト文章てきすとテキスト文章てきすとテキスト文章てきすとテキスト文章てきすとテキスト文章てきすとテキスト文章てきすとテキスト文章てきすとテキスト文章てきすとテキスト文章てきすとテキスト文章てきすとテキスト文章てきすとテキスト文章</p>
+      <div class="p-contact-container">
+        <div class="c-contact-form">
+          <p class="c-contact-form__ttl">お名前</p>
+          <input class="c-contact-form__inputArea" type="text">
+          <p class="c-contact-form__ttl">メールアドレス</p>
+          <input class="c-contact-form__inputArea" type="text">
+          <p class="c-contact-form__ttl">お問い合わせ内容</p>
+          <textarea class="c-contact-form__textArea" name="" id="" cols="30" rows="10"></textarea>
+        </div>
+        <div class="c-btn-area p-contact__button">
+          <a class="c-button">send</a>
+        </div>
+      </div>
     </section> <!-- /p-contact wrapper-->
   </main>
   <footer class="l-footer">
+    <div class="l-footer__snsLink">
+      <a href="#" class="l-footer__snsLink-item"><i class="fab fa-twitter l-footer__snsLink-space"></i>Twitter</a>
+      <a href="#" class="l-footer__snsLink-item"><i class="fab fa-github l-footer__snsLink-space"></i>GitHub</a>
+    </div>
+    <a href="#" class="c-logo l-footer__logo">
+      <img class="c-logo__img" src="./asset/img/logo (1).png" alt="M.create-worksのロゴ">
+    </a>
+    <p class="l-footer__copy">&copy;M.create-works</p>
   </footer>
 </body>
 
