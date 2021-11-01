@@ -535,7 +535,7 @@ object {
   transition: all 0.5s;
 }
 
-.active #mask {
+.open #mask {
   display: block;
   position: fixed;
   top: 0;
