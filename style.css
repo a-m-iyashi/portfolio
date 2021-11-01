@@ -457,6 +457,7 @@ object {
 
 .l-header-hamburger {
   margin-right: 20px;
+  z-index: 30;
 }
 
 .l-header-spMenu {
