@@ -6,9 +6,9 @@ $(function() {
   function hamburger() {
     $('.l-header-hamburger').toggleClass('active');
     if ($('.l-header-hamburger').hasClass('active')) {  //l-header-hamburgerクラスにactiveクラスが存在する場合
-      $('.l-header-open').addClass('active');  //l-header-openにもactiveクラスを追加する
+      $('.l-header-spMenu').addClass('active');  //l-header-spMenuにもactiveクラスを追加する
     } else {  // hamburgerクラスにactiveクラスが存在しない場合
-      $('.l-header-open').removeClass('active');//l-header-openからactiveクラスを削除する
+      $('.l-header-spMenu').removeClass('active');//l-header-spMenuからactiveクラスを削除する
     }
   }
 });
