@@ -580,12 +580,22 @@ object {
 }
 
 @media (min-width: 600px) {
+  .l-header {
+    position: static;
+    overflow: visible;
+  }
+
   .l-header-hamburger {
     display: none;
   }
 
   .l-header-menu {
     display: block;
+    background-color: white;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0px;
+    z-index: 20;
   }
 }
 @media (min-width: 900px) {
@@ -636,7 +646,7 @@ object {
 .c-button {
   display: inline-block;
   text-align: center;
-  font-size: 1.8rem;
+  font-size: 2rem;
   line-height: 1.5;
   color: #505050;
   padding: 8px 60px;
@@ -648,7 +658,7 @@ object {
   transition: all 0.3s;
 }
 .c-button:hover {
-  font-weight: bold;
+  color: #000;
 }
 .c-button::before {
   display: block;
@@ -877,16 +887,26 @@ object {
 
 .p-contact__text {
   font-size: 1.8rem;
-  margin: 0 20px 40px;
+  margin: 0 40px 40px;
 }
 
 .p-contact__button {
   text-align: center;
 }
 
+@media (min-width: 600px) {
+  .p-contact__text {
+    margin: 0 100px 40px;
+  }
+
+  .p-contact-container {
+    margin-right: 80px;
+    margin-left: 80px;
+  }
+}
 @media (min-width: 900px) {
   .p-contact__text {
-    margin: 0 210px 40px;
+    margin: 0 100px 40px;
   }
 
   .p-contact-container {
@@ -1022,7 +1042,7 @@ object {
 
 .p-fv-introduction {
   width: 100%;
-  padding: 40px 70px 40px;
+  padding: 40px 40px 40px;
 }
 
 .p-fv-introduction__txt {
