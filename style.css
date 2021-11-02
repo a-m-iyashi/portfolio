@@ -561,9 +561,7 @@ object {
 
 .l-header-menu__list {
   font-size: 1.6rem;
-  margin-top: 15px;
-  margin-right: 40px;
-  margin-bottom: 15px;
+  padding: 15px 20px 15px;
   position: relative;
 }
 
