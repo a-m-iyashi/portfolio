@@ -592,6 +592,7 @@ object {
   .l-header-menu {
     display: block;
     background-color: white;
+    box-shadow: 0 5px 8px #505050;
     position: -webkit-sticky;
     position: sticky;
     top: 0px;
