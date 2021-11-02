@@ -556,13 +556,15 @@ object {
 .l-header-menu__lists {
   display: flex;
   justify-content: start;
-  margin-left: 88px;
+  padding-left: 88px;
 }
 
 .l-header-menu__list {
   font-size: 1.6rem;
-  padding: 15px 20px 15px;
+  padding: 15px 0;
+  margin-right: 40px;
   position: relative;
+  cursor: pointer;
 }
 
 .l-header-menu__list:hover:after {
@@ -571,7 +573,7 @@ object {
   height: 3px;
   border-radius: 2px;
   position: absolute;
-  bottom: -2px;
+  bottom: 13px;
   left: 0;
   -webkit-animation: header-menu_anim ease-out 0.5s forwards;
           animation: header-menu_anim ease-out 0.5s forwards;
