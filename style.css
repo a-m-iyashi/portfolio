@@ -551,6 +551,7 @@ object {
 
 .l-header-menu {
   display: none;
+  box-shadow: 0 4px 3px #505050;
 }
 
 .l-header-menu__lists {
@@ -560,14 +561,19 @@ object {
 }
 
 .l-header-menu__list {
-  font-size: 1.6rem;
   padding: 15px 0;
   margin-right: 40px;
+  transition: all 1s;
+}
+
+.l-header-menu__link {
+  font-size: 1.6rem;
+  padding: 15px 0;
   position: relative;
   cursor: pointer;
 }
 
-.l-header-menu__list:hover:after {
+.l-header-menu__link:hover:after {
   content: "";
   background-color: #5ff569;
   height: 3px;
@@ -575,8 +581,8 @@ object {
   position: absolute;
   bottom: 13px;
   left: 0;
-  -webkit-animation: header-menu_anim ease-out 0.5s forwards;
-          animation: header-menu_anim ease-out 0.5s forwards;
+  -webkit-animation: header-menu_anim ease-out 1s forwards;
+          animation: header-menu_anim ease-out 1s forwards;
 }
 
 @media (min-width: 600px) {
@@ -592,7 +598,6 @@ object {
   .l-header-menu {
     display: block;
     background-color: white;
-    box-shadow: 0 5px 8px #505050;
     position: -webkit-sticky;
     position: sticky;
     top: 0px;
@@ -617,12 +622,12 @@ object {
   padding-bottom: 18px;
 }
 
-.l-footer__snsLink-space {
+.l-footer__snsLink--space {
   margin-right: 10px;
   margin-bottom: 18px;
 }
 
-.l-footer__snsLink-item {
+.l-footer__snsLink--item {
   font-size: 1.6rem;
 }
 
@@ -647,10 +652,6 @@ object {
 .c-button {
   display: inline-block;
   text-align: center;
-  font-size: 2rem;
-  line-height: 1.5;
-  color: #505050;
-  padding: 8px 60px;
   border: 1px solid #505050;
   border-radius: 1px;
   background-color: transparent;
@@ -691,6 +692,15 @@ object {
   border-radius: 2px;
 }
 
+.c-button__txt {
+  display: block;
+  width: 160px;
+  font-size: 2rem;
+  line-height: 1.5;
+  color: #505050;
+  margin: 2px 0px;
+}
+
 .c-card {
   max-width: 430px;
   width: 100%;
@@ -720,6 +730,7 @@ object {
   display: inline-block;
   font-size: 1.6rem;
   margin: 0 35px 40px 35px;
+  line-height: 1.5;
 }
 
 .c-card__Language {
@@ -844,19 +855,19 @@ object {
 }
 
 .c-section {
-  padding-top: 60px;
+  padding-top: 80px;
   padding-bottom: 40px;
 }
 
 .c-section__ttl {
   font-family: "Noto Serif JP", serif;
   font-size: 2.4rem;
-  margin-bottom: 40px;
+  margin-bottom: 50px;
   text-align: center;
   position: relative;
 }
 
-.c-section__ttl-skills::after {
+.c-section__ttl--skills::after {
   content: "skills";
   font-size: 4rem;
   color: #5ff569;
@@ -866,7 +877,7 @@ object {
   left: 50%;
 }
 
-.c-section__ttl-products::after {
+.c-section__ttl--products::after {
   content: "products";
   font-size: 4rem;
   color: #5ff569;
@@ -876,7 +887,7 @@ object {
   left: 50%;
 }
 
-.c-section__ttl-contact::after {
+.c-section__ttl--contact::after {
   content: "contact";
   font-size: 4rem;
   color: #5ff569;
@@ -889,6 +900,7 @@ object {
 .p-contact__text {
   font-size: 1.8rem;
   margin: 0 40px 40px;
+  line-height: 1.5;
 }
 
 .p-contact__button {
@@ -1048,6 +1060,7 @@ object {
 
 .p-fv-introduction__txt {
   font-size: 1.8rem;
+  line-height: 1.5;
 }
 
 @media (min-width: 600px) {
@@ -1113,6 +1126,15 @@ object {
     margin-bottom: 0;
   }
 }
+.fadeIn {
+  opacity: 0.1;
+  transition: all 0.5s;
+}
+
+.fadeIn.scrollIgnition {
+  opacity: 1;
+}
+
 @-webkit-keyframes popUp {
   0% {
     opacity: 0;
@@ -1126,6 +1148,7 @@ object {
     transform: translateY(0);
   }
 }
+
 @keyframes popUp {
   0% {
     opacity: 0;
@@ -1186,4 +1209,13 @@ object {
     opacity: 1;
     width: 100%;
   }
+}
+.slideIn {
+  opacity: 0;
+  overflow: hidden;
+}
+
+.slideIn.scrollIgnition {
+  -webkit-animation: popUp 2s ease-out 0.5s forwards;
+          animation: popUp 2s ease-out 0.5s forwards;
 }/*# sourceMappingURL=style.css.map */
