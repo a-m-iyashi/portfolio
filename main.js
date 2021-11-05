@@ -1,5 +1,5 @@
 $(function() {
-  // hamburger-menu
+  // ハンバーガーメニュー
   $('.l-header-hamburger').on('click', function(){
     hamburger();
   });
@@ -29,19 +29,25 @@ $(function() {
   }
 });
 $(function(){
-  //  スムーススクロール
-  // ページ内のリンクをクリックした時に動作する
+  // スムーススクロール
   $('a[href^="#"]').click(function(){
-    // リンクを取得
-    let href= $(this).attr("href");
-    // ジャンプ先のid名をセット
-    let target = $(href == "#" || href == "" ? 'html' : href);
-    // トップからジャンプ先の要素までの距離を取得
-    let position = target.offset().top;
-    // animateでスムーススクロールを行う
-    // 500はスクロール速度で単位はミリ秒
-    $("html, body").animate({scrollTop:position}, 500, "swing");
-    return false;
+    var href= $(this).attr("href");  //出発地点取得
+    var target= $(href == "#" || href == "" ? 'html' : href);  //到着地点取得
+    var position = target.offset().top;  //到着地点をtopからの数値で取得
+    $("html,body").animate({scrollTop:position}, 600, "swing");
   });
-})
-
+  
+});
+$(function() {
+  //スクロールイベント
+  $(window).scroll(function() {
+    $(".scrollIvent").each(function() {
+      var scroll = $(window).scrollTop();
+      var blockPosition = $(this).offset().top;
+      var windowHeihgt = $(window).height();
+      if (scroll > blockPosition - windowHeihgt + 150) {
+        $(this).addClass("scrollIgnition");
+      }
+    });
+  });
+});
